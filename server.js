@@ -62,7 +62,7 @@ server2.on("listening", function() {
   );
 });
 
-host = "https://starfinder-server.onrender.com"
+host = "127.0.0.1"
 
 
 server1.bind(2222,host)
