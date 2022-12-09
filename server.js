@@ -48,6 +48,21 @@ server2.on("message", function (msg, rinfo) {
     if(indirizzo1 != 0)
         server1.send(connesso, porta1, indirizzo1) 
 });
+server1.on("listening", function() {
+  var address = server1.address();
+  console.log(
+    "UDP server1 listening on " + address.address + ":" + address.port
+  );
+});
+
+server2.on("listening", function() {
+  var address = server2.address();
+  console.log(
+    "UDP server2 listening on " + address.address + ":" + address.port
+  );
+});
+
+
 server1.bind(52464)
 server2.bind(52465)
 
