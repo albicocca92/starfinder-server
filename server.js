@@ -62,8 +62,10 @@ server2.on("listening", function() {
   );
 });
 
+host = "https://starfinder-server.onrender.com"
 
-server1.bind(2222)
-server2.bind(2223)
+
+server1.bind(2222,host)
+server2.bind(2223, host) 
 
 console.log("Server Operativo")
