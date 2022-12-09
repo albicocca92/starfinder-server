@@ -63,7 +63,7 @@ server2.on("listening", function() {
 });
 
 
-server1.bind(52464)
-server2.bind(52465)
+server1.bind(2222)
+server2.bind(2223)
 
 console.log("Server Operativo")
