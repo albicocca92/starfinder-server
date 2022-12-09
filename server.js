@@ -3,12 +3,15 @@ const app = express()
 // environment variables
 // root
 app.get('/', (req, res) => {
-  res.sendStatus(200)
+  
+  res.send("FUNZIONO")
 })
 
 
 
-
+var listener = app.listen(8888, function(){
+  console.log('Listening on port ' + listener.address().port); //Listening on port 8888
+});
 
 
 var dgram = require("dgram");
